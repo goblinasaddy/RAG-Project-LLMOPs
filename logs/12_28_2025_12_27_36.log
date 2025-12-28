@@ -1,0 +1,142 @@
+{"timestamp": "2025-12-28T06:58:32.314940Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-28T06:58:32.314940Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-28T06:58:32.314940Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-28T06:58:32.319993Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251228_122832_d8abc34a", "temp_dir": "data\\session_20251228_122832_d8abc34a", "faiss_dir": "faiss_index\\session_20251228_122832_d8abc34a", "sessionized": true, "timestamp": "2025-12-28T06:58:32.329883Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "AIAYN.pdf", "saved_as": "data\\session_20251228_122832_d8abc34a\\f958d458.pdf", "timestamp": "2025-12-28T06:58:32.344024Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2025-12-28T06:58:35.279096Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 52, "chunk_size": 1000, "overlap": 200, "timestamp": "2025-12-28T06:58:35.281725Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-28T06:58:35.281725Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251228_122832_d8abc34a", "timestamp": "2025-12-28T06:58:37.984591Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-28T06:58:37.986675Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-28T06:58:56.300724Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-28T06:58:56.300724Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-28T06:58:56.300724Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-28T06:58:56.309728Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.5-flash", "timestamp": "2025-12-28T06:58:56.312170Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251228_122832_d8abc34a", "timestamp": "2025-12-28T06:58:56.315887Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251228_122832_d8abc34a", "timestamp": "2025-12-28T06:58:56.317521Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-28T06:58:56.322638Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-28T06:58:56.322638Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-28T06:58:56.328782Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-28T06:58:56.332873Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-28T06:58:56.336361Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251228_122832_d8abc34a", "timestamp": "2025-12-28T06:58:56.369575Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index/session_20251228_122832_d8abc34a", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251228_122832_d8abc34a", "timestamp": "2025-12-28T06:58:56.373402Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 5.221840777s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 5
+}
+].
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 2.835557959s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 2
+}
+].
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 8.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 58.331569319s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 58
+}
+].
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 16.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 49.81736542s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 49
+}
+].
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 32.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 33.155334973s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 33
+}
+].
