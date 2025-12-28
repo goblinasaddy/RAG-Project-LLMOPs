@@ -1,0 +1,32 @@
+{"timestamp": "2025-12-27T11:59:23.102063Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T11:59:23.102063Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T11:59:23.102063Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T11:59:23.105159Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251227_172923_ac7612a0", "temp_dir": "data\\session_20251227_172923_ac7612a0", "faiss_dir": "faiss_index\\session_20251227_172923_ac7612a0", "sessionized": true, "timestamp": "2025-12-27T11:59:23.106436Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "/Users/Aditya Kumar Singh/OneDrive/Desktop/Learning-LLMs/LLMOPs-Project/data/AIAYN.pdf", "saved_as": "data\\session_20251227_172923_ac7612a0\\cfdf440d.pdf", "timestamp": "2025-12-27T11:59:23.109966Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2025-12-27T11:59:24.186975Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 251, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-27T11:59:24.192240Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-27T11:59:24.193345Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251227_172923_ac7612a0", "timestamp": "2025-12-27T11:59:28.248668Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-27T11:59:28.251207Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-27T11:59:28.253221Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T11:59:28.255240Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T11:59:28.256372Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T11:59:28.261141Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.5-flash", "timestamp": "2025-12-27T11:59:28.263990Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251227_172923_ac7612a0", "timestamp": "2025-12-27T11:59:28.264885Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "timestamp": "2025-12-27T11:59:28.266870Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-27T11:59:28.268418Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T11:59:28.269428Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T11:59:28.270336Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T11:59:28.275598Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-27T11:59:28.277012Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251227_172923_ac7612a0", "timestamp": "2025-12-27T11:59:28.323399Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251227_172923_ac7612a0", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251227_172923_ac7612a0", "timestamp": "2025-12-27T11:59:28.323916Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "user_input": "What is attention", "answer_preview": "I don't know.", "timestamp": "2025-12-27T11:59:52.237387Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "user_input": "What paper are we reviewing", "answer_preview": "The paper being reviewed proposes the Transformer, a model architecture that relies entirely on an attention mechanism to draw global dependencies bet", "timestamp": "2025-12-27T12:00:19.256614Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "user_input": "Who all are the authors of the paper", "answer_preview": "I don't know.", "timestamp": "2025-12-27T12:00:54.802012Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "user_input": "why is google written init?", "answer_preview": "Google is written in the text because it is associated with \"Google\u2019s neural machine translation system,\" which is mentioned in the context of bridgin", "timestamp": "2025-12-27T12:01:27.094784Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251227_172923_ac7612a0", "user_input": "what is the name of the paper", "answer_preview": "The name of the paper is \"The Transformer\".", "timestamp": "2025-12-27T12:01:50.406195Z", "level": "info", "event": "Chain invoked successfully"}

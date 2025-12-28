@@ -1,0 +1,28 @@
+{"timestamp": "2025-12-27T12:13:09.598732Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T12:13:09.598732Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T12:13:09.598732Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T12:13:09.598732Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251227_174309_b528582b", "temp_dir": "data\\session_20251227_174309_b528582b", "faiss_dir": "faiss_index\\session_20251227_174309_b528582b", "sessionized": true, "timestamp": "2025-12-27T12:13:09.635443Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "/Users/Aditya Kumar Singh/OneDrive/Desktop/Learning-LLMs/LLMOPs-Project/data/AIAYN.pdf", "saved_as": "data\\session_20251227_174309_b528582b\\7ba61ce6.pdf", "timestamp": "2025-12-27T12:13:09.639311Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2025-12-27T12:13:10.683249Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 251, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-27T12:13:10.687814Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-27T12:13:10.687814Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251227_174309_b528582b", "timestamp": "2025-12-27T12:13:14.774724Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-27T12:13:14.782434Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-27T12:13:14.786388Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T12:13:14.790805Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T12:13:14.792730Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T12:13:14.794514Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.5-flash", "timestamp": "2025-12-27T12:13:14.798530Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251227_174309_b528582b", "timestamp": "2025-12-27T12:13:14.801662Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251227_174309_b528582b", "timestamp": "2025-12-27T12:13:14.801662Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-27T12:13:14.801662Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-27T12:13:14.801662Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-27T12:13:14.801662Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-27T12:13:14.807033Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-12-27T12:13:14.808032Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251227_174309_b528582b", "timestamp": "2025-12-27T12:13:14.826054Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251227_174309_b528582b", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251227_174309_b528582b", "timestamp": "2025-12-27T12:13:14.826721Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251227_174309_b528582b", "user_input": "Hello", "answer_preview": "I don't know.", "timestamp": "2025-12-27T12:13:28.664911Z", "level": "info", "event": "Chain invoked successfully"}
