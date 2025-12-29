@@ -9,22 +9,25 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
-      - name: Set up uv
-        uses: astral-sh/setup-uv@v4
-
-      - name: Sync dependencies with uv (locked)
+      - name: Upgrade pip
         run: |
-          uv sync --frozen
-          uv pip install pytest
+          python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest
+
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}/multi_doc_chat
@@ -32,4 +35,4 @@ jobs:
           GOOGLE_API_KEY: dummy
           LLM_PROVIDER: google
         run: |
-          uv run pytest -q
+          pytest -q
