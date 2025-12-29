@@ -21,3 +21,4 @@ Jinja2
 langsmith
 openai
 pandas
+pypdf
